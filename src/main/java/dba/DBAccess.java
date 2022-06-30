@@ -4,6 +4,8 @@ import org.hibernate.*;
 import org.hibernate.boot.*;
 import org.hibernate.boot.registry.*;
 
+//import obj.*;
+
 //import org.hibernate.cfg.Configuration;
 
 /**

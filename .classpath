@@ -24,7 +24,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/jaxb-api-2.3.0.jar"/>
 	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/byte-buddy-1.8.12.jar"/>
 	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/c3p0-0.9.5.2.jar"/>
@@ -53,5 +52,6 @@
 	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/proxool-0.8.3.jar"/>
 	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/slf4j-api-1.6.1.jar"/>
 	<classpathentry kind="lib" path="D:/BFZ/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar"/>
+	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/jaxb-ri/mod/angus-activation.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
