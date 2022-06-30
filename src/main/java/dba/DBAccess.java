@@ -38,7 +38,7 @@ public class DBAccess {
 		SessionFactory 					sf 			= md.getSessionFactoryBuilder().build();
 										session 	= sf.openSession();
 		
-		createEntities();
+//		createEntities();
 	}	// main()
 	
 	public static void createEntities() {
@@ -112,5 +112,5 @@ public class DBAccess {
 		for(SportsEvent se: sportevents) {
 			session.persist(se);
 		}
-	}
+	}	// createSportEvents()
 }
