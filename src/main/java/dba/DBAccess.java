@@ -3,6 +3,7 @@ package dba;
 import org.hibernate.*;
 import org.hibernate.boot.*;
 import org.hibernate.boot.registry.*;
+
 //import org.hibernate.cfg.Configuration;
 
 /**
