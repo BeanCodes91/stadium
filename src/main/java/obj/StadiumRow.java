@@ -10,13 +10,21 @@ import javax.persistence.*;
 public class StadiumRow {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int rowID;
+	
+	@Column(name = "row_name")
+	private char name;
 	
 	@ManyToMany
 	private List<StadiumSeat> seats;
 
 	public StadiumRow() {
+	}
+	
+	public StadiumRow(char name, List<StadiumSeat> seats) {
+		this.name = name;
+		this.seats = seats;
 	}
 
 	public List<StadiumSeat> getSeats() {

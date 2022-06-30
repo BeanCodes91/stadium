@@ -1,34 +1,33 @@
 package obj;
 
-import java.time.LocalDate;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "EVENTS")
+@Table(name = "SPORTEVENTS")
 
 public class SportsEvent {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int eventID;
 
 	@Column(name = "events_name")
 	private String eventName;
 	
 	@Column(name = "events_date")
-	private LocalDate eventDate;
+	private String eventDate;
 	
 	@Column(name = "events_capacity")
 	private int eventCap;
 	
 	public SportsEvent() {
-		
+		this.eventCap = 0;
 	}
 
-	public SportsEvent(String eventName, LocalDate eventDate, int eventCap) {
+	public SportsEvent(String eventName, String eventDate) {
+		this();
 		this.eventName = eventName;
 		this.eventDate = eventDate;
-		this.eventCap = eventCap;
 	}
 
 	public int getEventID() {
@@ -43,11 +42,11 @@ public class SportsEvent {
 		this.eventName = eventName;
 	}
 
-	public LocalDate getEventDate() {
+	public String getEventDate() {
 		return eventDate;
 	}
 
-	public void setEventDate(LocalDate eventDate) {
+	public void setEventDate(String eventDate) {
 		this.eventDate = eventDate;
 	}
 

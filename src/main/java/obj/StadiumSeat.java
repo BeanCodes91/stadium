@@ -8,7 +8,7 @@ import javax.persistence.*;
 public class StadiumSeat {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int seatID;
 
 	public StadiumSeat() {

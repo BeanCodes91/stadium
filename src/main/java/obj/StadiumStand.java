@@ -1,7 +1,5 @@
 package obj;
 
-import java.util.List;
-
 import javax.persistence.*;
 
 @Entity
@@ -15,16 +13,12 @@ public class StadiumStand {
 	
 	@Column(name = "stand_name")
 	private String name;
-	
-	@OneToMany
-	private List<StadiumBlock> blocks;
 
 	public StadiumStand() {
 	}
 	
-	public StadiumStand(String name, List<StadiumBlock> blocks) {
+	public StadiumStand(String name) {
 		this.name = name;
-		this.blocks = blocks;
 	}
 
 	public String getName() {
@@ -33,17 +27,5 @@ public class StadiumStand {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public List<StadiumBlock> getBlocks() {
-		return blocks;
-	}
-
-	public void setBlocks(List<StadiumBlock> blocks) {
-		this.blocks = blocks;
-	}
-
-	public int getStandID() {
-		return standID;
 	}
 }

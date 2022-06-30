@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class StadiumBlock {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int blockID;
 	
 	@Column(name = "block_price")
@@ -18,18 +18,21 @@ public class StadiumBlock {
 	@Column(name = "block_capacity")
 	private int blockCap;
 	
+	@ManyToOne
+	private StadiumStand standName;
+	
 	@ManyToMany
 	private List<StadiumRow> rows;
 
 	public StadiumBlock() {
-		
+		this.blockCap = 0;
 	}
 
-	public StadiumBlock(double blockPrice, int blockCap, List<StadiumRow> rows) {
-		super();
+	public StadiumBlock(StadiumStand standName, double blockPrice, List<StadiumRow> rows) {
+		this.standName = standName;
 		this.blockPrice = blockPrice;
-		this.blockCap = blockCap;
 		this.rows = rows;
+		this.blockCap = 0;
 	}
 
 	public double getBlockPrice() {
