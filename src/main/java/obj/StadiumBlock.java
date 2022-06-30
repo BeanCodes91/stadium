@@ -28,11 +28,9 @@ public class StadiumBlock {
 		this.blockCap = 0;
 	}
 
-	public StadiumBlock(StadiumStand standName, double blockPrice, List<StadiumRow> rows) {
-		this.standName = standName;
-		this.blockPrice = blockPrice;
+	public StadiumBlock(List<StadiumRow> rows) {
+		this();
 		this.rows = rows;
-		this.blockCap = 0;
 	}
 
 	public double getBlockPrice() {
@@ -63,5 +61,16 @@ public class StadiumBlock {
 		return blockID;
 	}
 	
-	
+	public void setStandAndPrice(StadiumStand standName, double blockPrice) {
+		this.standName 	= standName;
+		this.blockPrice = blockPrice;
+	}
+
+	public StadiumStand getStandName() {
+		return standName;
+	}
+
+	public void setStandName(StadiumStand standName) {
+		this.standName = standName;
+	}
 }
