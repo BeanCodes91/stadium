@@ -8,5 +8,14 @@ import javax.persistence.*;
 public class StadiumSeat {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int seatID;
+
+	public StadiumSeat() {
+		
+	}
+
+	public int getSeatID() {
+		return seatID;
+	}
 }

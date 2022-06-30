@@ -4,14 +4,10 @@ import org.hibernate.*;
 import org.hibernate.boot.*;
 import org.hibernate.boot.registry.*;
 
-//import obj.*;
+import obj.*;
 
 //import org.hibernate.cfg.Configuration;
 
-/**
- * Hello world!
- *
- */
 public class DBAccess {
 
 	static Session session;
@@ -28,8 +24,13 @@ public class DBAccess {
 //		session.persist(new EventBooking());	
 		transaction.commit();
 	}
-
-	public static void createEntities() {
 	
+	public static void createStadiumSeats() {
+		
+		transaction = session.beginTransaction();
+		
+		for(int i = 0; i < 50; i++) {
+			session.persist(new StadiumSeat());
+		}
 	}
 }

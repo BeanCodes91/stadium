@@ -8,8 +8,29 @@ import javax.persistence.*;
 public class Ticket {
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int ticketID;
 	
 	@OneToOne
 	private StadiumBlock blockID;
+
+	public Ticket() {
+	}
+
+	public Ticket(StadiumBlock blockID) {
+		this.blockID = blockID;
+	}
+
+	public int getTicketID() {
+		return ticketID;
+	}
+
+	public void setTicketID(int ticketID) {
+		this.ticketID = ticketID;
+	}
+
+	public StadiumBlock getBlockID() {
+		return blockID;
+	}
+
 }

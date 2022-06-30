@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class EventBooking {
 
 	@Id
-	@Column(name="booking_id")
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int bookingID;
 	
 	@OneToOne
@@ -17,4 +17,34 @@ public class EventBooking {
 	
 	@OneToMany
 	private List<Ticket> tickets;
+	
+	public EventBooking() {
+		
+	}
+
+	public EventBooking(SportsEvent sportsEvent) {
+		this.sportsEvent = sportsEvent;
+	}
+
+	public int getBookingID() {
+		return bookingID;
+	}
+
+	public SportsEvent getSportsEvent() {
+		return sportsEvent;
+	}
+
+	public void setSportsEvent(SportsEvent sportsEvent) {
+		this.sportsEvent = sportsEvent;
+	}
+
+	public List<Ticket> getTickets() {
+		return tickets;
+	}
+
+	public void setTickets(List<Ticket> tickets) {
+		this.tickets = tickets;
+	}
+	
+	
 }
