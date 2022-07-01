@@ -3,7 +3,7 @@ package obj;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "STANDS")
+@Table
 
 public class StadiumStand {
 
@@ -11,7 +11,7 @@ public class StadiumStand {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int standID;
 	
-	@Column(name = "stand_name")
+	@Column
 	private String name;
 
 	public StadiumStand() {

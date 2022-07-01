@@ -3,7 +3,7 @@ package obj;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "TICKETS")
+@Table
 
 public class Ticket {
 

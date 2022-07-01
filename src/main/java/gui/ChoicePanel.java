@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.FlowLayout;
 import java.awt.GridBagLayout;
 
 import javax.swing.*;
@@ -25,6 +24,6 @@ public class ChoicePanel extends JPanel{
 		seatType.add(sitting);
 		seatType.add(standing);
 		
-		this.add(new JLabel("test"));
+//		this.add(new JLabel("test"));
 	}
 }

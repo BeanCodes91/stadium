@@ -4,7 +4,7 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "BLOCKS")
+@Table
 
 public class StadiumBlock {
 
@@ -12,10 +12,10 @@ public class StadiumBlock {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int blockID;
 	
-	@Column(name = "block_price")
+	@Column
 	private double blockPrice;
 	
-	@Column(name = "block_capacity")
+	@Column
 	private int blockCap;
 	
 	@ManyToOne
@@ -72,5 +72,10 @@ public class StadiumBlock {
 
 	public void setStandName(StadiumStand standName) {
 		this.standName = standName;
+	}
+	
+	@Override
+	public String toString() {
+		return "Block " + blockID;
 	}
 }

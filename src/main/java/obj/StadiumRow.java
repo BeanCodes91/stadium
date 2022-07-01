@@ -5,7 +5,7 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "STADIUMROWS")
+@Table
 
 public class StadiumRow {
 	
@@ -13,7 +13,7 @@ public class StadiumRow {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int rowID;
 	
-	@Column(name = "row_name")
+	@Column
 	private char name;
 	
 	@ManyToMany

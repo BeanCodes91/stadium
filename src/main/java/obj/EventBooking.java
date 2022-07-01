@@ -4,7 +4,7 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "BOOKINGS")
+@Table
 
 public class EventBooking {
 

@@ -3,7 +3,7 @@ package obj;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "SPORTEVENTS")
+@Table
 
 public class SportsEvent {
 	
@@ -11,13 +11,13 @@ public class SportsEvent {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int eventID;
 
-	@Column(name = "events_name")
+	@Column
 	private String eventName;
 	
-	@Column(name = "events_date")
+	@Column
 	private String eventDate;
 	
-	@Column(name = "events_capacity")
+	@Column
 	private int eventCap;
 	
 	public SportsEvent() {
