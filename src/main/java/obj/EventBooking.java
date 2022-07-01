@@ -1,7 +1,8 @@
 package obj;
 
 import java.util.List;
-import javax.persistence.*;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table

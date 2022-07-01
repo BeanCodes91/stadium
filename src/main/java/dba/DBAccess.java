@@ -27,7 +27,7 @@ public class DBAccess {
 								session 	= 	sf.openSession();
 						
 		queryMethods();						
-//		createEntities();
+		createEntities();
 	}	// main()
 	
 	/**
@@ -47,7 +47,7 @@ public class DBAccess {
 		transaction = session.beginTransaction();
 		
 		dbLists = new ListsFromDB(session);
-		System.out.println(dbLists.getBlocksWithSpace());
+//		System.out.println(dbLists.getBlocksWithSpace());
 		transaction.commit();
 	}
 }

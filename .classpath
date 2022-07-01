@@ -24,34 +24,33 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/antlr-2.7.7.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/byte-buddy-1.8.12.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/c3p0-0.9.5.2.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/classmate-1.3.4.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/geolatte-geom-1.3.0.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-c3p0-5.3.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-commons-annotations-5.0.3.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-core-5.3.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-envers-5.3.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-jpamodelgen-5.3.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-osgi-5.3.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-proxool-5.3.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/hibernate-spatial-5.3.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/jandex-2.0.3.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/javassist-3.22.0-GA.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/javax.interceptor-api-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/javax.persistence-api-2.2.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/jboss-logging-3.3.2.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/jts-core-1.14.0.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/mchange-commons-java-0.2.11.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/org.osgi.compendium-4.3.1.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/org.osgi.core-4.3.1.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/postgresql-42.2.2.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/proxool-0.8.3.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/hibernatejar/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="D:/BFZ/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar"/>
-	<classpathentry kind="lib" path="D:/Coding_Workspace/Beanstuff/jaxb-ri/mod/angus-activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/byte-buddy-1.8.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/classmate-1.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/geolatte-geom-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-c3p0-5.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-commons-annotations-5.0.3.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-core-5.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-envers-5.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-jpamodelgen-5.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-osgi-5.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-proxool-5.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/hibernate-spatial-5.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/jandex-2.0.3.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/javassist-3.22.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/javax.interceptor-api-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/jts-core-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/mchange-commons-java-0.2.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/org.osgi.compendium-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/org.osgi.core-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/postgresql-42.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/proxool-0.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/hibernate/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Melanie Knorn/Dropbox/BFZ Essen/Dokumente/Notizen und Aufgaben/Fachqualifikation/Projektsimulation/Java_Code/stadium/libraries/mysql-connector-java-8.0.25.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
