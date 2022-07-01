@@ -1,8 +1,6 @@
 package gui;
 
 import javax.swing.*;
-import javax.swing.plaf.InsetsUIResource;
-
 import java.awt.*;
 
 /**

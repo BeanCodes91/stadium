@@ -1,70 +1,19 @@
 package gui;
 
 import javax.swing.*;
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
 
 public class StartPanel extends JPanel {
 
-	private JPanel eventListPanel, centerPanel, buttonPanel, seatPanel;
-	private JComboBox<String> eventChoice, standChoice;
-	private JRadioButton sitting, standing;
-	private JTextField amountSeats;
-	private JButton startButton;
+	private GridBagConstraints 	gbc_stadiumPanel, gbc_choicePanel, gbc_pricePanel;
 	
 	public StartPanel() {
 		
-		this.setLayout(new BorderLayout());
-		this.add(new StadiumPanel(), 	BorderLayout.NORTH);
-		this.add(eventView(), 			BorderLayout.WEST);
-		this.add(choiceView(), 			BorderLayout.CENTER);
-		this.add(new PriceListPanel(), 	BorderLayout.EAST);
+		this.setLayout(new GridBagLayout());
+		this.add(new StadiumPanel(), 	gbc_stadiumPanel);
+		this.add(new ChoicePanel(), 	gbc_choicePanel);
+		this.add(new PriceListPanel(), 	gbc_pricePanel);
 		
 	}
-	
-	private JPanel eventView() {
-		
-		eventListPanel = new JPanel();
-		
-		return eventListPanel;
-	}
-	
-	private JPanel choiceView() {
-		
-		centerPanel = new JPanel();
-		centerPanel.setLayout(new FlowLayout());
-		
-		eventChoice = new JComboBox<String>();
-		
-		seatPanel = new JPanel();
-		seatPanel.setLayout(new BoxLayout(seatPanel, BoxLayout.Y_AXIS));
-		
-		buttonPanel = new JPanel();
-		buttonPanel.setLayout(new GridLayout(2,2));
-		
-		amountSeats = new JTextField(3);
-		
-		sitting = new JRadioButton("Sitzplatz");
-		standing = new JRadioButton("Stehplatz");
-		ButtonGroup seatType = new ButtonGroup();
-		seatType.add(sitting);
-		seatType.add(standing);
-		
-		buttonPanel.add(sitting);
-		buttonPanel.add(amountSeats);
-		buttonPanel.add(standing);
-		
-		standChoice = new JComboBox<String>();
-		
-		seatPanel.add(buttonPanel);
-		seatPanel.add(standChoice);
-		
-		centerPanel.add(eventChoice);
-		centerPanel.add(seatPanel);
-		
-		return centerPanel;
-	}
-	
-
 }
