@@ -18,4 +18,9 @@ public class StadiumSeat {
 	public int getSeatID() {
 		return seatID;
 	}
+	
+	@Override
+	public String toString() {
+		return "" + seatID;
+	}
 }

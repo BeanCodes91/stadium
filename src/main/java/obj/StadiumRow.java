@@ -16,13 +16,18 @@ public class StadiumRow {
 	@Column
 	private char name;
 	
+	@Column
+	private int seatsAvailable;
+	
 	@ManyToMany
 	private List<StadiumSeat> seats;
 
 	public StadiumRow() {
+		seatsAvailable = 50;
 	}
 	
 	public StadiumRow(char name, List<StadiumSeat> seats) {
+		this();
 		this.name = name;
 		this.seats = seats;
 	}
@@ -38,6 +43,17 @@ public class StadiumRow {
 	public int getRowID() {
 		return rowID;
 	}
-
 	
+	public void setSeatsAvailable(int seatsAvailable) {
+		this.seatsAvailable = seatsAvailable;
+	}
+
+	public int getSeatsBooked() {
+		return seatsAvailable;
+	}
+	
+	@Override
+	public String toString() {
+		return "Reihe: " + name;
+	}
 }
