@@ -47,7 +47,8 @@ public class DBAccess {
 		transaction = session.beginTransaction();
 		
 		dbLists = new ListsFromDB(session);
-		System.out.println(dbLists.getAllSeats());
+		System.out.println(dbLists.getAllBlocks());
+		System.out.println(dbLists.getAvailableBlocksWithSeats());
 		transaction.commit();
 	}
 }

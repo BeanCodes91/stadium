@@ -99,6 +99,19 @@ public class ListsFromDB {
 		return blockList;
 	}
 	
+	public ArrayList<StadiumBlock> getAvailableBlocksWithSeats() {
+		
+		blockList	= getAvailableBlocks();
+		
+		for(int i = 0; i < blockList.size(); i++) {
+			if(blockList.get(i).getRows().isEmpty()) {
+				blockList.remove(i);
+				i--;
+			}
+		}
+		return blockList;
+	}
+	
 	
 	public ArrayList<StadiumRow> getAvailableRowsFromBlock(int numberSeats) {
 		
