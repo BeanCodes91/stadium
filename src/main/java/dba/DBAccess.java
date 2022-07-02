@@ -18,7 +18,7 @@ public class DBAccess {
 	 */
 	static Session 		session;
 	static Transaction	transaction;
-	static ListsFromDB	dbLists;
+	static GetAllLists	dbLists;
 	
 	public static void main(String[] args) {
 		StandardServiceRegistry	registry	= 	new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
@@ -46,9 +46,8 @@ public class DBAccess {
 	public static void queryMethods() {
 		transaction = session.beginTransaction();
 		
-		dbLists = new ListsFromDB(session);
+		dbLists = new GetAllLists(session);
 		System.out.println(dbLists.getAllBlocks());
-		System.out.println(dbLists.getAvailableBlocksWithSeats());
 		transaction.commit();
 	}
 }

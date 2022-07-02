@@ -5,7 +5,7 @@ import org.hibernate.*;
 import jakarta.persistence.TypedQuery;
 import obj.*;
 
-public class ListsFromDB {
+public class GetAllLists {
 
 	private static Session					sessionList;
 	
@@ -30,7 +30,11 @@ public class ListsFromDB {
 	private static TypedQuery<Ticket>		ticketQuery;
 	private static ArrayList<Ticket>		ticketList;
 	
-	public ListsFromDB(Session session) {
+	public GetAllLists() {
+		
+	}
+	
+	public GetAllLists(Session session) {
 		sessionList = session;
 	}
 	
@@ -55,6 +59,17 @@ public class ListsFromDB {
 		blockQuery 	= sessionList.createQuery("from StadiumBlock", StadiumBlock.class);
 		blockList	= (ArrayList<StadiumBlock>)(blockQuery.getResultList());
 		
+		return blockList;
+	}
+	
+	public ArrayList<StadiumBlock> getAllBlocksWithSeats() {
+			
+		blockQuery 	= sessionList.createQuery("from StadiumBlock", StadiumBlock.class);
+		blockList	= (ArrayList<StadiumBlock>)(blockQuery.getResultList());
+	
+		for(int i = 0; i < blockList.size(); i++) {
+			if(blockList.get(i).getRows().isEmpty()) blockList.remove(i--);
+		}
 		return blockList;
 	}
 	
@@ -91,26 +106,7 @@ public class ListsFromDB {
 	}
 	
 	
-	public ArrayList<StadiumBlock> getAvailableBlocks() {
-		
-		blockQuery 	= sessionList.createQuery("from StadiumBlock where blockCap < 500", StadiumBlock.class);
-		blockList	= (ArrayList<StadiumBlock>)(blockQuery.getResultList());
-		
-		return blockList;
-	}
 	
-	public ArrayList<StadiumBlock> getAvailableBlocksWithSeats() {
-		
-		blockList	= getAvailableBlocks();
-		
-		for(int i = 0; i < blockList.size(); i++) {
-			if(blockList.get(i).getRows().isEmpty()) {
-				blockList.remove(i);
-				i--;
-			}
-		}
-		return blockList;
-	}
 	
 	
 	public ArrayList<StadiumRow> getAvailableRowsFromBlock(int numberSeats) {
