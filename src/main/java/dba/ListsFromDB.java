@@ -2,8 +2,6 @@ package dba;
 
 import java.util.ArrayList;
 
-//import javax.persistence.TypedQuery;
-
 import org.hibernate.*;
 
 import jakarta.persistence.TypedQuery;
@@ -29,7 +27,7 @@ public class ListsFromDB {
 	
 	public ArrayList<SportsEvent> getAllEvents() {
 		
-//		eventsQuery = sessionList.createQuery("from SportsEvent", SportsEvent.class);
+		eventsQuery = sessionList.createQuery("from SportsEvent", SportsEvent.class);
 		
 		return (ArrayList<SportsEvent>)(eventsQuery.getResultList());
 	}
