@@ -33,4 +33,8 @@ public class Ticket {
 		return blockID;
 	}
 
+	@Override
+	public String toString() {
+		return "Block: " + blockID;
+	}
 }

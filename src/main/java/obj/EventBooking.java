@@ -47,5 +47,8 @@ public class EventBooking {
 		this.tickets = tickets;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Ihre Bestellung:\n" + tickets;
+	}
 }

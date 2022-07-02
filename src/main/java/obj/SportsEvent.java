@@ -58,5 +58,8 @@ public class SportsEvent {
 		this.eventCap = eventCap;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return eventName + ": " + eventDate;
+	}
 }
