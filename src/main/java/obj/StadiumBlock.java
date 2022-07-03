@@ -3,11 +3,19 @@ package obj;
 import java.util.List;
 import jakarta.persistence.*;
 
+/**
+ * This class provides the datatype of StadiumBlock representing a block within the stadium.
+ * 
+ * @author Melanie Knorn
+ */
 @Entity
 @Table
 
 public class StadiumBlock {
 
+	/**
+	 * Field variables
+	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int blockID;
@@ -24,15 +32,25 @@ public class StadiumBlock {
 	@ManyToMany
 	private List<StadiumRow> rows;
 
+	/**
+	 * Constructor without parameters
+	 */
 	public StadiumBlock() {
 		this.blockCap = 0;
 	}
 
+	/**
+	 * Constructor with parameters
+	 * @param rows		A list of rows within the block
+	 */
 	public StadiumBlock(List<StadiumRow> rows) {
 		this();
 		this.rows = rows;
 	}
 
+	/**
+	 * Getter and Setter
+	 */
 	public double getBlockPrice() {
 		return blockPrice;
 	}
@@ -74,6 +92,9 @@ public class StadiumBlock {
 		this.standName = standName;
 	}
 	
+	/**
+	 * ToString 
+	 */
 	@Override
 	public String toString() {
 		return "Block " + blockID;

@@ -2,13 +2,20 @@ package dba;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.hibernate.Session;
-
 import obj.*;
 
+/**
+ * This class handles the creation of entities for the database based on the classes in the package obj.
+ * 
+ * @author Melanie Knorn
+ *
+ */
 public class CreateEntities {
 	
+	/*
+	 * Field variables
+	 */
 	private static Session				sessionCreate;
 	private static List<StadiumSeat> 	seats;
 	private static List<StadiumRow> 	rows;
@@ -19,6 +26,11 @@ public class CreateEntities {
 														new SportsEvent("FC Kassel 05 - BVB 09", "16.07.2022"),
 														new SportsEvent("FC Kassel 05 - Bayern München", "30.07.2022")};
 	
+	/*
+	 * Constructor
+	 * 
+	 * Initializes the session and runs the classes methods automatically
+	 */
 	public CreateEntities(Session session) {
 		sessionCreate = session;
 		createSeats();
@@ -117,5 +129,4 @@ public class CreateEntities {
 			sessionCreate.persist(se);
 		}
 	}	// createSportEvents()
-
 }

@@ -1,14 +1,23 @@
 package obj;
 
 import java.util.List;
-
 import jakarta.persistence.*;
+
+/**
+ * This class provides the datatype of EventBooking to book tickets for one event.
+ * 
+ * @author Melanie Knorn
+ *
+ */
 
 @Entity
 @Table
 
 public class EventBooking {
 
+	/**
+	 * Field variables
+	 */
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int bookingID;
@@ -19,14 +28,23 @@ public class EventBooking {
 	@OneToMany
 	private List<Ticket> tickets;
 	
-	public EventBooking() {
-		
-	}
+	/**
+	 * Constructor without parameters
+	 */
+	public EventBooking() {}
 
+	/**
+	 * Constructor with event parameter
+	 * 
+	 * @param sportsEvent	An event
+	 */
 	public EventBooking(SportsEvent sportsEvent) {
 		this.sportsEvent = sportsEvent;
 	}
 
+	/**
+	 * Getters and Setters
+	 */
 	public int getBookingID() {
 		return bookingID;
 	}
@@ -47,6 +65,9 @@ public class EventBooking {
 		this.tickets = tickets;
 	}
 	
+	/**
+	 * ToString method
+	 */
 	@Override
 	public String toString() {
 		return "Ihre Bestellung:\n" + tickets;

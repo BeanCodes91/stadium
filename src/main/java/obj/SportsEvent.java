@@ -2,11 +2,21 @@ package obj;
 
 import jakarta.persistence.*;
 
+/**
+ * This class provides the datatype of SportsEvent representing an event at the stadium.
+ * 
+ * @author Melanie Knorn
+ *
+ */
+
 @Entity
 @Table
 
 public class SportsEvent {
 	
+	/**
+	 * Field variables
+	 */
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int eventID;
@@ -20,16 +30,28 @@ public class SportsEvent {
 	@Column
 	private int eventCap;
 	
+	/**
+	 * Constructor without parameters
+	 */
 	public SportsEvent() {
 		this.eventCap = 0;
 	}
 
+	/**
+	 * Constructor with parameters
+	 * 
+	 * @param eventName		Name of the event
+	 * @param eventDate		Date of the event
+	 */
 	public SportsEvent(String eventName, String eventDate) {
 		this();
 		this.eventName = eventName;
 		this.eventDate = eventDate;
 	}
 
+	/**
+	 * Getters and Setters
+	 */
 	public int getEventID() {
 		return eventID;
 	}
@@ -58,6 +80,9 @@ public class SportsEvent {
 		this.eventCap = eventCap;
 	}
 	
+	/**
+	 * ToString method
+	 */
 	@Override
 	public String toString() {
 		return eventName + ": " + eventDate;
