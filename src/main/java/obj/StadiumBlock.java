@@ -36,7 +36,7 @@ public class StadiumBlock {
 	 * Constructor without parameters
 	 */
 	public StadiumBlock() {
-		this.blockCap = 0;
+		this.blockCap = 500;
 	}
 
 	/**

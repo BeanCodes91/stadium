@@ -11,7 +11,7 @@ import obj.*;
  * @author Melanie Knorn
  *
  */
-public class GetAllLists {
+public class AllLists {
 
 	/**
 	 * Field variables
@@ -35,12 +35,12 @@ public class GetAllLists {
 	/**
 	 * Constructor without parameters
 	 */
-	public GetAllLists() {}
+	public AllLists() {}
 	
 	/**
 	 * Constructor with session parameter
 	 */
-	public GetAllLists(Session session) {
+	public AllLists(Session session) {
 		sessionList = session;
 	}
 	

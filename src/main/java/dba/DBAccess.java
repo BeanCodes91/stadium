@@ -5,7 +5,7 @@ import org.hibernate.boot.*;
 import org.hibernate.boot.registry.*;
 
 import dba_obj.BlockLists;
-import dba_obj.GetAllLists;
+import dba_obj.AllLists;
 
 /**
  * This class manages the database access
@@ -21,7 +21,7 @@ public class DBAccess {
 	 */
 	static Session 		session;
 	static Transaction	transaction;
-	static GetAllLists	dbLists;
+	static AllLists	dbLists;
 	
 	/**
 	 * Starts database transaction and calls methods to create the database entities.
@@ -43,7 +43,7 @@ public class DBAccess {
 	public static void queryMethods() {
 		transaction = session.beginTransaction();
 		
-		dbLists = new GetAllLists(session);
+		dbLists = new AllLists(session);
 		BlockLists bList	= new BlockLists();
 		System.out.println(dbLists.getAllBlocks());
 		System.out.println(bList.getAllBlocksWithSeats());

@@ -68,7 +68,7 @@ public class StadiumRow {
 		this.seatsAvailable = seatsAvailable;
 	}
 
-	public int getSeatsBooked() {
+	public int getSeatsAvailable() {
 		return seatsAvailable;
 	}
 	

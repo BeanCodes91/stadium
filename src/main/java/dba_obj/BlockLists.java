@@ -5,12 +5,19 @@ import java.util.ArrayList;
 import obj.*;
 
 /**
- * This class provides ArrayLists with certain blocks
+ * This class provides ArrayLists with certain blocks.
+ * It inherits the ArrayLists from AllLists
  * 
  * @author Melanie Knorn
  *
  */
-public class BlockLists extends GetAllLists{
+public class BlockLists extends AllLists{
+	
+	/**
+	 * Field variabled
+	 */
+	private static ArrayList<StadiumBlock>	sittingBlocks;
+	private static ArrayList<StadiumBlock>	standingBlocks;
 	
 	/**
 	 * Gets an ArrayList of all blocks that have enough space for the amount of tickets to be booked
@@ -21,7 +28,7 @@ public class BlockLists extends GetAllLists{
 	public ArrayList<StadiumBlock> getAvailableBlocks(int ticketAmount) {
 		
 		for(int i = 0; i < blockList.size(); i++) {
-			if(blockList.get(i).getBlockCap() <= (500 - ticketAmount)) blockList.remove(i--);
+			if(blockList.get(i).getBlockCap() <= ticketAmount) blockList.remove(i--);
 		}
 		
 		return blockList;
@@ -30,26 +37,26 @@ public class BlockLists extends GetAllLists{
 	/**
 	 * Gets an ArrayList of all the blocks with seats in the database
 	 * 
-	 * @return	blockList	All the blocks with seats
+	 * @return	sittingBlocks	All the blocks with seats
 	 */
 	public ArrayList<StadiumBlock> getAllBlocksWithSeats() {
 			
-		for(int i = 0; i < blockList.size(); i++) {
-			if(blockList.get(i).getRows().isEmpty()) blockList.remove(i--);
+		for(StadiumBlock sb: blockList) {
+			if(!(sb.getRows().isEmpty())) sittingBlocks.add(sb);
 		}
-		return blockList;
+		return sittingBlocks;
 	}
 	
 	/**
 	 * Gets an ArrayList of all the blocks without seats in the database
 	 * 
-	 * @return	blockList	All the blocks without seats
+	 * @return	standingBlocks	All the blocks without seats
 	 */
 	public ArrayList<StadiumBlock> getAllBlocksWithoutSeats() {
 			
-		for(int i = 0; i < blockList.size(); i++) {
-			if(!(blockList.get(i).getRows().isEmpty())) blockList.remove(i--);
+		for(StadiumBlock sb: blockList) {
+			if(sb.getRows().isEmpty()) standingBlocks.add(sb);
 		}
-		return blockList;
+		return standingBlocks;
 	}
 }
